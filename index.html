@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Form Project</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <label for="email">Email: </label> 
+        <input type="email" name="email" id="email"/>
+      </fieldset><br>
+      <fieldset>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password"/>
+      </fieldset><br>
+      <fieldset>
+        <label for="username">Github Username: </label>
+        <input type="text" name="username" id="username" required pattern="[A-Za-z}+"/>
+      </fieldset><br>
+      <fieldset>
+        <legend>Select your GitHub Plan</legend>
+        <div>
+          <label for="enterprise">Enterprise</label>
+          <input type="radio" id="enterprise" name="plan"/>
+        </div>
+        <div>
+          <label for="pro">Pro</label>
+          <input type="radio" id="pro" name="plan"/>
+        </div>
+        <div>
+          <label for="free">Free</label>
+          <input type="radio" id="free" name="plan"/>
+        </div>
+      </fieldset><br>
+      <fieldset>
+        <legend>Remember Me</legend>
+        <div>
+          <input type="checkbox" id="remember_me" name="remember_me"/>
+        </div>
+      </fieldset><br>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </body>
+</html>
